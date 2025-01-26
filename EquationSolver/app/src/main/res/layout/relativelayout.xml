@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Saisir les coefficients de l'equation"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/border"
+        android:ems="4"
+        android:inputType="number"
+        android:hint="a"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextNumber5"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/editTextNumber5"
+        android:text="X^2 + "
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber10"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:ems="4"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:hint="b"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextNumber10"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/editTextNumber10"
+        android:text="X+ "
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber11"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_below="@id/textView6"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:hint="c"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextNumber11"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/editTextNumber11"
+        android:text="= 0"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/button6"
+        android:background="@drawable/bouton"
+        android:ems="7"
+        android:text="RESOUDRE"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber11"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bouton"
+        android:ems="7"
+        android:text="REINTIALISER"
+
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Solution: "
+        android:textSize="20dp"/>
+
+</RelativeLayout>
