@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/main">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Saisir les coefficients de l'equation"
+        android:textSize="20dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextNumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/border"
+            android:ems="3"
+            android:inputType="number"
+            android:hint="a"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextNumber5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/editTextNumber5"
+            android:text="X^2 + "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextNumber10"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:ems="3"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:hint="b"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextNumber10"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/editTextNumber10"
+            android:text="X+ "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextNumber11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:hint="c"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextNumber11"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/editTextNumber11"
+            android:text="= 0"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESOUDRE"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bouton"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@null"
+            android:background="@drawable/bouton"
+            android:textColor="@color/black"
+            android:text="REINTIALISER" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solution: "
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>
