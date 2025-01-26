@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/student_image"
+            android:background="@color/grey" />
+
+    <TextView
+            android:id="@+id/info"
+            android:hint="@string/student_info"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:autofillHints="Student Info"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+    <EditText
+            android:id="@+id/Name"
+            android:inputType="text"
+            android:layout_below="@+id/info"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Name"
+            android:hint="@string/name"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+            android:id="@+id/LastName"
+            android:inputType="text"
+            android:layout_below="@+id/Name"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Last Name"
+            android:hint="@string/last_name"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+            android:id="@+id/ID"
+            android:inputType="text"
+            android:layout_below="@+id/LastName"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Student ID"
+            android:hint="@string/student_id"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+            android:id="@+id/add"
+            android:text="@string/add"
+            android:backgroundTint="@color/orange"
+            android:layout_width="120dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/ID"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black" />
+
+    <Button
+            android:id="@+id/delete"
+            android:text="@string/delete"
+            android:backgroundTint="@color/orange"
+            android:layout_width="120dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/ID"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/add"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+
+    <Button
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:backgroundTint="@color/orange"
+            android:layout_width="120dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/ID"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/delete"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+
+    <Button
+            android:id="@+id/edit"
+            android:text="@string/edit"
+            android:backgroundTint="@color/orange"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/add"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/black" />
+
+    <Button
+            android:id="@+id/display"
+            android:text="@string/display_all"
+            android:backgroundTint="@color/orange"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/delete"
+            android:layout_toEndOf="@+id/edit"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+
+</RelativeLayout>

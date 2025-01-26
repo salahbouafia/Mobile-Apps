@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/info"
+            android:hint="@string/student_info"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:autofillHints="Student Info"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+    <EditText
+            android:id="@+id/Name"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Name"
+            android:hint="@string/name"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575" />
+
+    <EditText
+            android:id="@+id/LastName"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Last Name"
+            android:hint="@string/last_name"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575" />
+
+    <EditText
+            android:id="@+id/ID"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Student ID"
+            android:hint="@string/student_id"
+            android:textColor="@color/white"
+            android:textColorHint="#757575"
+            android:backgroundTint="#757575" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/add"
+                android:text="@string/add"
+                style="?android:attr/buttonBarStyle"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:layout_width="120dp"
+                android:layout_height="75dp" />
+
+        <Button
+                android:id="@+id/delete"
+                android:text="@string/delete"
+                style="?android:attr/buttonBarStyle"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"/>
+
+        <Button
+                android:id="@+id/search"
+                android:text="@string/search"
+                style="?android:attr/buttonBarStyle"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/edit"
+                android:text="@string/edit"
+                style="?android:attr/buttonBarStyle"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:layout_width="125dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="5dp" />
+
+        <Button
+                android:id="@+id/display"
+                android:text="@string/display_all"
+                style="?android:attr/buttonBarStyle"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:layout_width="125dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

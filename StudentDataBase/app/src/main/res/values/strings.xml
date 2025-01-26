@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Student DataBase</string>
+    <string name="student_image">Student Image</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="display_all">Display All</string>
+    <string name="student_id">Student ID:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="name">Name:</string>
+    <string name="student_info">Student Info</string>
+</resources>

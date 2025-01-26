@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainActivity"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+            android:id="@+id/info"
+            android:hint="@string/student_info"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:autofillHints="Student Info"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/inputs"/>
+
+    <RelativeLayout
+                android:id="@+id/inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info"
+                app:layout_constraintBottom_toTopOf="@+id/buttons">
+
+        <EditText
+                android:id="@+id/Name"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Name"
+                android:hint="@string/name"
+                android:textColor="@color/white"
+                android:textColorHint="#757575"
+                android:backgroundTint="#757575"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+                android:id="@+id/LastName"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Last Name"
+                android:hint="@string/last_name"
+                android:textColor="@color/white"
+                android:textColorHint="#757575"
+                android:backgroundTint="#757575"
+                android:layout_below="@+id/Name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+                android:id="@+id/ID"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Student ID"
+                android:hint="@string/student_id"
+                android:textColor="@color/white"
+                android:textColorHint="#757575"
+                android:backgroundTint="#757575"
+                android:layout_below="@+id/LastName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="VisualLintTextFieldSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputs"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputs"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+                android:id="@+id/buttons1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/add"
+                    android:text="@string/add"
+                    style="?android:attr/buttonBarStyle"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black"
+                    android:layout_width="120dp"
+                    android:layout_height="75dp" />
+
+            <Button
+                    android:id="@+id/delete"
+                    android:text="@string/delete"
+                    style="?android:attr/buttonBarStyle"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black"
+                    android:layout_width="120dp"
+                    android:layout_height="75dp"/>
+
+            <Button
+                    android:id="@+id/search"
+                    android:text="@string/search"
+                    style="?android:attr/buttonBarStyle"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black"
+                    android:layout_width="120dp"
+                    android:layout_height="75dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/buttons2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons1"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/edit"
+                    android:text="@string/edit"
+                    style="?android:attr/buttonBarStyle"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black"
+                    android:layout_width="125dp"
+                    android:layout_height="75dp" />
+
+            <Button
+                    android:id="@+id/display"
+                    android:text="@string/display_all"
+                    style="?android:attr/buttonBarStyle"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black"
+                    android:layout_width="125dp"
+                    android:layout_height="75dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
