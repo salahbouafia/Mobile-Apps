@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    android:background="@color/black">
-
+    android:id="@+id/main">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -23,7 +21,6 @@
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:background="@drawable/border"
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
         android:ems="4"
@@ -50,7 +47,6 @@
     <EditText
         android:id="@+id/editTextNumber3"
         android:layout_width="wrap_content"
-        android:background="@drawable/border"
         android:layout_height="50dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="44dp"
@@ -81,7 +77,6 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/border"
         android:ems="4"
         android:inputType="number"
         android:hint="a"
@@ -108,25 +103,25 @@
         android:id="@+id/button"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="25dp"
-        android:text="REINTIALISER"
-        android:background="@drawable/bouton"
+        android:backgroundTint="@color/grey"
+        android:text="REINTIALISER "
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="25dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/grey"
         android:text="RESOUDRE"
-        android:background="@drawable/bouton"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+        tools:layout_editor_absoluteY="148dp" />
 
     <TextView
         android:id="@+id/textView5"
