@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's turn"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/gridWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStatus"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_toEndOf="@id/button_00"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_toEndOf="@id/button_01"
+            android:layout_marginStart="8dp" />
+
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_00"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_01"
+            android:layout_toEndOf="@id/button_10"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_02"
+            android:layout_toEndOf="@id/button_11"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_11"
+            android:layout_toEndOf="@id/button_20"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="24sp"
+            android:layout_below="@id/button_12"
+            android:layout_toEndOf="@id/button_21"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_below="@id/gridWrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
